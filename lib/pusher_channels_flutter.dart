@@ -96,6 +96,7 @@ class PusherChannelsFlutter {
     int? maxReconnectGapInSeconds,
     String? proxy, // pusher-websocket-java only
     bool? enableStats, // pusher-js only
+    bool? disableStats, // pusher-js only
     List<String>? disabledTransports, // pusher-js only
     List<String>? enabledTransports, // pusher-js only
     bool? ignoreNullOrigin, // pusher-js only
@@ -103,6 +104,9 @@ class PusherChannelsFlutter {
     String? authTransport, // pusher-js only
     Map<String, Map<String, String>>? authParams, // pusher-js only
     bool? logToConsole, // pusher-js only
+    String? wsHost,
+    int? wsPort,
+    int? wssPort,
     Function(String currentState, String previousState)?
         onConnectionStateChange,
     Function(String channelName, dynamic data)? onSubscriptionSucceeded,
@@ -144,7 +148,11 @@ class PusherChannelsFlutter {
       "authEndpoint": authEndpoint,
       "authTransport": authTransport,
       "authParams": authParams,
-      "logToConsole": logToConsole
+      "logToConsole": logToConsole,
+      "wsHost": wsHost,
+      "wssPort": wssPort,
+      "wsPort": wsPort,
+      "disableStats": disableStats,
     });
   }
 

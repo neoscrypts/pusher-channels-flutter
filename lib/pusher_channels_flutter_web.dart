@@ -258,6 +258,18 @@ class PusherChannelsFlutterWeb {
     if (call.arguments['authParams'] != null) {
       options.auth = call.arguments['authParams'];
     }
+    if (call.arguments['wsHost'] != null) {
+      options.wsHost = call.arguments['wsHost'];
+    }
+    if (call.arguments['wssPort'] != null) {
+      options.wssPort = call.arguments['wssPort'];
+    }
+    if (call.arguments['wsPort'] != null) {
+      options.wsPort = call.arguments['wsPort'];
+    }
+    if (call.arguments['disableStats'] != null) {
+      options.disableStats = call.arguments['disableStats'];
+    }
     if (call.arguments['logToConsole'] != null) {
       Pusher.logToConsole = call.arguments['logToConsole'];
     }
