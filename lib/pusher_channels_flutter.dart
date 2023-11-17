@@ -96,7 +96,6 @@ class PusherChannelsFlutter {
     int? maxReconnectGapInSeconds,
     String? proxy, // pusher-websocket-java only
     bool? enableStats, // pusher-js only
-    bool? disableStats, // pusher-js only
     List<String>? disabledTransports, // pusher-js only
     List<String>? enabledTransports, // pusher-js only
     bool? ignoreNullOrigin, // pusher-js only
@@ -152,7 +151,6 @@ class PusherChannelsFlutter {
       "wsHost": wsHost,
       "wssPort": wssPort,
       "wsPort": wsPort,
-      "disableStats": disableStats,
     });
   }
 
