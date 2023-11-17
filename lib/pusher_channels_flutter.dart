@@ -148,6 +148,7 @@ class PusherChannelsFlutter {
       "authTransport": authTransport,
       "authParams": authParams,
       "logToConsole": logToConsole,
+      "host": wsHost,
       "wsHost": wsHost,
       "wssPort": wssPort,
       "wsPort": wsPort,
